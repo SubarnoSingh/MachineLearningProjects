@@ -66,8 +66,7 @@ The dataset contains three columns:
 
 ```python
 # Example
-interest_rate = 4.5
-unemployment_rate = 5.0
+interest_rate = 3.4
+unemployment_rate = 5.2
 
-predicted_index_price = model.predict([[interest_rate, unemployment_rate]])
-print(predicted_index_price)
+regression.predict(scaler.transform([[3.4, 5.2]]))
